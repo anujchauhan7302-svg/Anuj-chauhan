@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <center>
+    <!-- 👇 Add your desired page URL inside action="" -->
+    <form action="nextpage.html" method="get">
+      <i class="fa-solid fa-face-smile" style="font-size:45px; color:orange;"></i>
+      <h2>Contact Us Today!</h2>
+
+      <table cellpadding="5" cellspacing="0">
+        <tr>
+          <td><i class="fa fa-user"></i> First Name:</td>
+          <td><input type="text" placeholder="First Name" name="fname" required></td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-user"></i> Last Name:</td>
+          <td><input type="text" placeholder="Last Name" name="lname" required></td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-envelope"></i> E-Mail:</td>
+          <td><input type="email" placeholder="E-Mail Address" name="email" required></td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-phone"></i> Phone #:</td>
+          <td><input type="tel" placeholder="(845)555-1212" name="phone"></td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-home"></i> Address:</td>
+          <td><input type="text" placeholder="Address" name="address"></td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-city"></i> City:</td>
+          <td><input type="text" placeholder="City" name="city"></td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-list"></i> State:</td>
+          <td>
+            <select name="state">
+              <option>Please select your state</option>
+              <option>Delhi</option>
+              <option>Haryana</option>
+              <option>Uttar Pradesh</option>
+              <option>Rajasthan</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-map-pin"></i> Zip Code:</td>
+          <td><input type="text" placeholder="Zip Code" name="zip"></td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-globe"></i> Website or domain name:</td>
+          <td><input type="text" placeholder="Website or domain name" name="website"></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            Do you have hosting?
+            <input type="radio" name="hosting" value="yes"> Yes
+            <input type="radio" name="hosting" value="no"> No
+          </td>
+        </tr>
+        <tr>
+          <td><i class="fa fa-pen"></i> Project Description:</td>
+          <td><textarea rows="4" cols="30" placeholder="Project Description" name="project"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <button type="submit"><i class="fa fa-paper-plane"></i> Send</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </center>
+</body>
+</html>
